@@ -1,0 +1,21 @@
+package com.balakumaranstores.stat.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.balakumaranstores.stat.entity.ProfileEntity;
+import com.balakumaranstores.stat.service.ProfileService;
+
+@Controller
+public class ProfileController {
+	
+	@Autowired
+	private ProfileService profileService;
+	
+	@PostMapping(path = "/profile/save")
+	public int saveProfile(ProfileEntity profileEntity) {
+		int userId = profileService.saveUser(profileEntity);
+		return userId;
+	}
+}

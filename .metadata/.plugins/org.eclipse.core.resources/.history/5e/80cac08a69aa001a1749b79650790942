@@ -1,0 +1,5 @@
+package com.balakumaranstores.stat.service;
+
+public class ProfileServiceImpl {
+
+}

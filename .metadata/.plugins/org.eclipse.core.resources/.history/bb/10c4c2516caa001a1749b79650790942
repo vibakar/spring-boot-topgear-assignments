@@ -1,0 +1,35 @@
+package com.balakumaranstores.stat.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.balakumaranstores.stat.Model.Profile;
+import com.balakumaranstores.stat.dao.ProfileDao;
+import com.balakumaranstores.stat.entity.ProfileEntity;
+
+@Component
+public class ProfileServiceImpl implements ProfileService {
+	
+	@Autowired
+	private ProfileDao profileDao;
+	
+	@Override
+	public int saveUser(ProfileEntity profileEntity) {
+		Profile profile = getProfile(profileEntity);
+		System.out.println(profile);
+		int userId = profileDao.saveProfile(profile);
+		return userId;
+	}
+	
+	private Profile getProfile(ProfileEntity profileEntity) {
+		Profile profile = new Profile();
+		profile.setId(profileEntity.getId());
+		profile.setName(profileEntity.getName());
+		profile.setEmail(profileEntity.getEmail());
+		profile.setProducts(profileEntity.getProducts());
+		profile.setPhoneNo(profileEntity.getPhoneNo());
+		profile.setPassword(profileEntity.getPassword());
+		return profile;
+	}
+
+}

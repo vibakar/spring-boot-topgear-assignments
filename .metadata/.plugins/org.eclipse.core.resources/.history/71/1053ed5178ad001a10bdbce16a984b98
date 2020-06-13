@@ -1,0 +1,25 @@
+package com.wipro.service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.example.rest.webservices.restfulwebservices.book.Book;
+import com.wipro.model.Employee;
+
+public class EmployeeService {
+	
+	private static Map<Integer, Employee> emp = new HashMap<Integer, Employee>();
+	
+	static {
+		Employee e1 = new Employee("Vibakar", "vibakar@gmail.com", "Bangalore");
+		Employee e2 = new Employee("Viba", "viba@gmail.com", "Bangalore");
+		
+		emp.put(1, e1);
+		emp.put(2, e2);
+	}
+	
+	public Map<Integer, Employee> getAllEmployees() {
+		return emp;
+	}
+}

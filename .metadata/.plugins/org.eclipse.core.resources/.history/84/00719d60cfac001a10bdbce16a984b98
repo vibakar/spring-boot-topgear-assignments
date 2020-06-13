@@ -1,0 +1,30 @@
+package com.wipro.model;
+
+import java.util.Map;
+
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Table(name = "employee")
+@Entity
+public class EmployeeMap {
+	@Id
+	private int id;
+	
+	@OneToMany(targetEntity=Employee.class, mappedBy="employee", 
+			fetch=FetchType.EAGER)
+	@ElementCollection
+	private Map<Integer, Employee> emp;
+
+	public Map<Integer, Employee> getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Map<Integer, Employee> emp) {
+		this.emp = emp;
+	}
+}

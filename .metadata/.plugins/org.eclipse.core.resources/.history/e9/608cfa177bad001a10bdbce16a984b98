@@ -1,0 +1,58 @@
+package com.wipro.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.wipro.model.Employee;
+import com.wipro.service.EmployeeService;
+
+@Controller
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeService empService;
+	
+	@ResponseBody
+	@PostMapping(path = "/add")
+	public int addEmployee(@RequestBody Employee emp) {
+		Employee e = new Employee(emp.getName(), emp.getEmail(), emp.getLocation());
+		return empService.addEmployee(e);
+	}
+	
+	@ResponseBody
+	@GetMapping(path = "/displayAll")
+	public Map<Integer, Employee> getAllEmployees() {
+		return empService.getAllEmployees();
+	}
+	
+	@ResponseBody
+	@GetMapping(path = "/display/{id}")
+	public Employee getEmployee(@PathVariable int id) {
+		return empService.getEmployeeById(id);
+	}
+	
+	@ResponseBody
+	@PutMapping(path = "/update/{id}")
+	public Employee updateEmployee(@PathVariable int id, @RequestBody Employee emp) {
+		Employee e = new Employee(emp.getName(), emp.getEmail(), emp.getLocation());
+		return empService.updateEmployee(id, e);
+	}
+	
+	@ResponseBody
+	@DeleteMapping(path = "/delete/{id}")
+	public Employee deleteEmployee(@PathVariable int id) {
+		return empService.deleteEmployee(id);
+	}
+}

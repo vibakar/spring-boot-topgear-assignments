@@ -1,0 +1,7 @@
+package com.balakumaranstores.stat.service;
+
+import com.balakumaranstores.stat.Model.Profile;
+
+public interface ProfileService {
+	int saveUser(Profile profile);
+}

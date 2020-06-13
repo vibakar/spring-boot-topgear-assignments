@@ -1,0 +1,12 @@
+package com.wipro.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+@org.springframework.web.bind.annotation.RestController
+public class RestController {
+
+	@GetMapping(path = "/branches")
+	public String getBranches() {
+		return null;
+	}
+}

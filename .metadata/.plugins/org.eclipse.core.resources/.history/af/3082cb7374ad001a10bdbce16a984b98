@@ -1,0 +1,7 @@
+insert into book (id, title, author, isbn, publicationDate, publisher, price, genre, format)
+values (1001, 'The Jungle Book', 'Rudyard Kipling', '9788379030651', '01/11/1985','Macmillan Publisher', 195, 'Adventure', 'Ebook')
+
+insert into book (id, title, author, isbn, publicationDate, publisher, price, genre, format)
+values (1002, 'The Selfish Giant', 'Oscar Wilde', '8793890730659', '01/11/1995', 'Independent Publishers', 320, 'Action', 'Hard Cover')
+
+

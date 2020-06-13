@@ -1,0 +1,21 @@
+package com.wipro.model;
+
+import java.io.Serializable;
+import java.util.Map;
+
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.MapKeyColumn;
+import javax.persistence.Table;
+
+@Table(name = "employee")
+@Entity
+public class EmployeeMap implements Serializable {
+	@Id
+	private int id;
+	
+	@ElementCollection
+    @MapKeyColumn(name = "id")
+	private Map<Integer, Employee> employee;
+}

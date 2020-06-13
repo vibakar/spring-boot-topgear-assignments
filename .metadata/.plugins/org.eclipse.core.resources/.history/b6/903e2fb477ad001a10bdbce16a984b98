@@ -1,0 +1,11 @@
+package com.wipro.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.wipro.model.Employee;
+
+public class EmployeeService {
+	
+	private Map<int, Employee> emp = new HashMap<int, Employee>();
+}

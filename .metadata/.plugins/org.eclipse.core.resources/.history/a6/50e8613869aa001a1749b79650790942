@@ -1,0 +1,5 @@
+package com.balakumaranstores.stat.dao;
+
+public class profileDaoImpl {
+
+}

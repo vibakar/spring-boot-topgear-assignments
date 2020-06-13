@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Add Employee</title>
+</head>
+<body>
+Employee ID:<input type="text"/>
+Employee Name:<input type="text"/>
+Employee Email:<input type="text"/>
+Employee Location:<input type="text"/>
+
+</body>
+</html>

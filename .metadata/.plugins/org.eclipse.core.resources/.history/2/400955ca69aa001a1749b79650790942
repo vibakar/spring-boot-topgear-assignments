@@ -1,0 +1,23 @@
+package com.balakumaranstores.stat.dao;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.balakumaranstores.stat.Model.Profile;
+
+@Component
+public class ProfileDaoImpl implements ProfileDao {
+	
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	@Override
+	public int saveProfile(Profile profile) {
+		Session session = sessionFactory.getCurrentSession();
+		return 0;
+	}
+
+}

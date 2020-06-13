@@ -1,0 +1,13 @@
+package com.balakumaranstores.stat.dao;
+
+import com.balakumaranstores.stat.Model.Profile;
+
+public class profileDaoImpl implements ProfileDao {
+
+	@Override
+	public int saveProfile(Profile profile) {
+		
+		return 0;
+	}
+
+}

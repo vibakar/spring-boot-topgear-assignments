@@ -1,0 +1,42 @@
+package com.wipro.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.wipro.model.Employee;
+import com.wipro.service.EmployeeService;
+
+@Controller
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeService empService;
+	
+	@ResponseBody
+	@PostMapping(path = "/add")
+	public Employee addEmployee(@RequestParam int id, @RequestParam String name, @RequestParam String email, @RequestParam String location) {
+		Employee e = new Employee(name, email, location);
+		return empService.addEmployee(id, e);
+	}
+	
+	@ResponseBody
+	@GetMapping(path = "/displayAll")
+	public Map<Integer, Employee> getAllEmployees() {
+		return empService.getAllEmployees();
+	}
+	
+	@ResponseBody
+	@GetMapping(path = "/display/{id}")
+	public Employee getEmployee(@PathVariable int id) {
+		return empService.getEmployeeById(id);
+	}
+}

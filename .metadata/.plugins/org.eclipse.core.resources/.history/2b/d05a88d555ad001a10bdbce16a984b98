@@ -1,0 +1,7 @@
+package com.balakumaranstores.stat.dao;
+
+import com.balakumaranstores.stat.Model.Profile;
+
+public interface ProfileDao {
+	int saveProfile(Profile profile);
+}

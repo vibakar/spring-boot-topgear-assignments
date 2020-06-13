@@ -1,0 +1,5 @@
+package com.balakumaranstores.stat.entity;
+
+public class Profile {
+
+}

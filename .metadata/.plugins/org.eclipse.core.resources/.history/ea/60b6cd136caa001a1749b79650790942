@@ -1,0 +1,25 @@
+package com.balakumaranstores.stat.controller;
+
+import java.io.IOException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.balakumaranstores.stat.entity.ProfileEntity;
+import com.balakumaranstores.stat.service.ProfileService;
+
+@Controller
+public class ProfileController {
+	
+	@Autowired
+	private ProfileService profileService;
+	
+	@ResponseBody
+	@PostMapping(path = "/profile/save")
+	public int saveProfile(ProfileEntity profileEntity) throws IOException {
+		int userId = profileService.saveUser(profileEntity);
+		return userId;
+	}
+}

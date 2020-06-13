@@ -1,0 +1,21 @@
+package com.wipro.model;
+
+import java.util.Map;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Table(name = "employees")
+@Entity
+public class EmployeeMap {
+	
+	private Map<Integer, Employee> emp;
+
+	public Map<Integer, Employee> getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Map<Integer, Employee> emp) {
+		this.emp = emp;
+	}
+}

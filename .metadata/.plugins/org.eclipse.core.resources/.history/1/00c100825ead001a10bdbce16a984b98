@@ -1,0 +1,58 @@
+package com.balakumaranstores.stat.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.balakumaranstores.stat.Model.User;
+import com.balakumaranstores.stat.dao.UserDao;
+import com.balakumaranstores.stat.entity.UserEntity;
+
+@Component
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	UserDao userDao;
+	
+	@Override
+	public int saveUser(UserEntity user) {
+		User u = getUser(user);
+		int userId = userDao.saveUser(u);
+		return userId;
+	}
+	
+	private User getUser(UserEntity user) {
+		User u = new User();
+		u.setName(user.getName());
+		u.setEmail(user.getEmail());
+		u.setProducts(user.getProducts());
+		u.setPhoneno(user.getPhoneNo());
+		u.setPassword(user.getPassword());
+		return u;
+	}
+
+	@Override
+	public UserEntity getUserById(int id) {
+		User user = new User();
+		user = userDao.getUserById(id);
+		UserEntity u = new UserEntity();
+		u.setId(user.getId());
+		u.setName(user.getName());
+		u.setEmail(user.getEmail());
+		u.setPassword(null);
+		u.setPhoneNo(user.getPhoneno());
+		u.setProducts(user.getProducts());
+		return u;
+	}
+
+	@Override
+	public void updateUser(UserEntity user) {
+		User u = new User();
+		u.setId(user.getId());
+		u.setName(user.getName());
+		u.setEmail(user.getEmail());
+		u.setPhoneno(user.getPhoneNo());
+		u.setProducts(user.getProducts());
+		userDao.updateUser(u);
+	}
+
+}

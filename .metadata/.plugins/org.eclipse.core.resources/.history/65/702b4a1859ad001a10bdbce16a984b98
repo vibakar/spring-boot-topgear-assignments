@@ -1,0 +1,7 @@
+package com.balakumaranstores.stat.service;
+
+import com.balakumaranstores.stat.entity.UserEntity;
+
+public interface UserService {
+	int saveUser(UserEntity user);
+}

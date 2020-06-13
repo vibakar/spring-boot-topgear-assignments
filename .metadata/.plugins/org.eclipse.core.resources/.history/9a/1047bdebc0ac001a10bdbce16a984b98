@@ -1,0 +1,18 @@
+package com.wipro.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.wipro.model.EmployeeRepository;
+
+@Controller
+public class EmployeeController {
+	
+	EmployeeRepository emp;
+	
+	@PostMapping(path = "/add")
+	public String addEmployee(@RequestParam String id, @RequestParam String email, @RequestParam String location) {
+		return "";
+	}
+}

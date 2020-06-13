@@ -1,0 +1,7 @@
+package com.wipro.model;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface EmployeeMapRepository extends CrudRepository<EmployeeMap, Integer>{
+
+}

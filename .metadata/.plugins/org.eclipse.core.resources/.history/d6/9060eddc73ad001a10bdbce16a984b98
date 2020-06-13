@@ -1,0 +1,53 @@
+package com.example.rest.webservices.restfulwebservices.book;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@CrossOrigin(origins = "http://localhost:4200")
+@RestController
+public class BooksController {
+
+	@Autowired
+	private BookService bookService;
+	
+	@Autowired
+	private BookRepository bookRepo;
+
+	@GetMapping(path = "/books")
+	public List<Book> getAllBooks() {
+		return bookRepo.findAll();
+	}
+
+	@GetMapping(path = "/books/{id}")
+	public Book getBook(@PathVariable long id) {
+		return bookRepo.findById(id).get();
+	}
+	
+	@PostMapping(path="/books")
+	public ResponseEntity<Book> addBook(@RequestBody Book book) {
+		return new ResponseEntity<Book>(bookRepo.save(book), HttpStatus.OK);
+	}
+	
+	@PutMapping(path="/books/{id}")
+	public ResponseEntity<Book> upateBook(@PathVariable long id, @RequestBody Book book) {
+		book.setId(id);
+		return new ResponseEntity<Book>(bookRepo.save(book), HttpStatus.OK);
+	}
+	
+	@DeleteMapping(path = "/books/{id}")
+	public ResponseEntity<Void> deleteBook(@PathVariable long id) {
+		bookRepo.deleteById(id);
+		return ResponseEntity.notFound().build();
+	}
+}

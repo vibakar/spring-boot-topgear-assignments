@@ -1,0 +1,25 @@
+package com.balakumaranstores.stat.Model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Table(name = "Profile")
+@Entity
+public class Profile {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "user_id",updatable = false, nullable = false)
+	private int id;
+	private String name;
+	private long phoneNo;
+	private String products;
+	private String email;
+	private String password;
+}

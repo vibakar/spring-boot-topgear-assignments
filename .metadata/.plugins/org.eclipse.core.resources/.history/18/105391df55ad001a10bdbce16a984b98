@@ -1,0 +1,13 @@
+package com.balakumaranstores.stat.entity;
+
+import lombok.Data;
+
+@Data
+public class ProfileEntity {
+	private int id;
+	private String name;
+	private long phoneNo;
+	private String products;
+	private String email;
+	private String password;
+}

@@ -1,0 +1,35 @@
+package com.balakumaranstores.stat.dao;
+
+import java.io.Serializable;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.balakumaranstores.stat.Model.Profile;
+
+@Component
+public class ProfileDaoImpl implements ProfileDao {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	@Override
+	public int saveProfile(Profile profile) {
+//		Session session = sessionFactory.getCurrentSession();
+//		session.beginTransaction();
+		int userId = 0;
+		try {
+//			Serializable ser = session.save(profile);
+//			if (ser != null) {
+//				userId = (Integer) ser;
+//			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+//		session.getTransaction().commit();
+		return userId;
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.balakumaranstores.stat.service;
+
+import org.springframework.stereotype.Component;
+
+import com.balakumaranstores.stat.Model.Profile;
+import com.balakumaranstores.stat.entity.ProfileEntity;
+
+@Component
+public class ProfileServiceImpl implements ProfileService {
+
+	@Override
+	public int saveUser(ProfileEntity profileEntity) {
+		int userId;
+		Profile profile = getProfile(profileEntity);
+		profile.
+		return 0;
+	}
+	
+	private Profile getProfile(ProfileEntity profileEntity) {
+		Profile profile = new Profile();
+		profile.setId(profileEntity.getId());
+		profile.setName(profileEntity.getName());
+		profile.setEmail(profileEntity.getEmail());
+		profile.setProducts(profileEntity.getProducts());
+		profile.setPhoneNo(profileEntity.getPhoneNo());
+		profile.setPassword(profileEntity.getPassword());
+		return profile;
+	}
+
+}

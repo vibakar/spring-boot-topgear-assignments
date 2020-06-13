@@ -1,0 +1,123 @@
+package com.example.rest.webservices.restfulwebservices.book;
+
+public class Book {
+
+	public Book(long id, String title, String author, String isbn, String publicationDate, String publisher, float price,
+			String genre, String format) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.isbn = isbn;
+		this.publicationDate = publicationDate;
+		this.publisher = publisher;
+		this.price = price;
+		this.genre = genre;
+		this.format = format;
+	}
+
+	private long id;
+	private String title;
+	private String author;
+	private String isbn;
+	private String publicationDate;
+	private String publisher;
+	private float price;
+	private String genre;
+	private String format;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getPublicationDate() {
+		return publicationDate;
+	}
+
+	public void setPublicationDate(String publicationDate) {
+		this.publicationDate = publicationDate;
+	}
+
+	public String getPublisher() {
+		return publisher;
+	}
+
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+	public String getFormat() {
+		return format;
+	}
+
+	public void setFormat(String format) {
+		this.format = format;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		return result;
+	}
+
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		Book other = (Book) obj;
+//		if (id != other.id)
+//			return false;
+//		return true;
+//	}
+
+}

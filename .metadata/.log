@@ -1,0 +1,175 @@
+!SESSION 2020-06-12 19:13:47.808 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+This is a continuation of log file /home/vibakar/Downloads/ecllipse-workspace/.metadata/.bak_0.log
+Created Time: 2020-06-13 18:50:50.516
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.517
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.517
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.517
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.517
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.518
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.518
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.518
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.518
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.518
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.518
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.519
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.519
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.519
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.520
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.520
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.520
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.520
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.521
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.521
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.521
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.522
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.522
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.522
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.523
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.523
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.523
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.523
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.523
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.524
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.524
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.524
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.525
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.525
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.525
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.525
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.526
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.526
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.526
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.526
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.527
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.527
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.527
+!MESSAGE buffering callback sts4.classpath.RMRoBKXs assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.527
+!MESSAGE executing callback sts4.classpath.RMRoBKXs 29 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.527
+!MESSAGE executing callback sts4.classpath.RMRoBKXs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-06-13 18:50:50.527
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.RMRoBKXs'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.527
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.528
+!MESSAGE buffering callback sts4.classpath.HKIVPEbX assignment5 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.528
+!MESSAGE executing callback sts4.classpath.HKIVPEbX 29 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 18:50:50.702
+!MESSAGE executing callback sts4.classpath.HKIVPEbX SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 19:09:20.292
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HKIVPEbX
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 19:09:20.292
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.HKIVPEbX
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 19:09:20.293
+!MESSAGE subsribers = {sts4.classpath.RMRoBKXs=Send Classpath Notifications(2046)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-13 19:09:20.293
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HKIVPEbX => OK

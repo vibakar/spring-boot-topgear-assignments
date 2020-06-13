@@ -1,0 +1,5 @@
+package com.balakumaranstores.stat.controller;
+
+public class ProfileController {
+
+}

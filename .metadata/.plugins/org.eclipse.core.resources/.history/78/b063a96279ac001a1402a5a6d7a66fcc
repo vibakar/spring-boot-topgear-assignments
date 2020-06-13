@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Add Employee</title>
+</head>
+<body>
+<form method="post" action="/add">
+<br><br>
+Employee ID:<input type="text" name="id"/>
+<br><br>
+Employee Name:<input type="text" name="name"/>
+<br><br>
+Employee Email:<input type="text" name="email"/>
+<br><br>
+Employee Location:<input type="text" name="location"/>
+<br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>

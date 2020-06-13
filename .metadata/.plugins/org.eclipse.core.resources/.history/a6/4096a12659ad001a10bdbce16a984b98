@@ -1,0 +1,38 @@
+package com.balakumaranstores.stat.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.balakumaranstores.stat.entity.UserEntity;
+import com.balakumaranstores.stat.service.UserService;
+
+@CrossOrigin(origins = "http://localhost:4200")
+@Controller
+public class UserController {
+	
+	@Autowired
+	private UserService userService;
+	
+	@ResponseBody
+	@PostMapping(path = "/user/save")
+	public int saveProfile(@RequestBody UserEntity user) throws IOException {
+		int userId = userService.saveUser(user);
+		return userId;
+	}
+	
+	@ResponseBody
+	@GetMapping(path = "/user/getData/{id}")
+	public UserEntity getDataAll(@PathVariable int id) throws IOException {
+		
+		return null;
+	}
+}

@@ -1,0 +1,45 @@
+package com.balakumaranstores.stat.dao;
+
+import java.io.Serializable;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.balakumaranstores.stat.Model.Contacts;
+import com.balakumaranstores.stat.Model.User;
+
+@Component
+public class UserDaoImpl implements UserDao {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	@Override
+	public int saveUser(User user) {
+		Session session = sessionFactory.getCurrentSession();
+		session.beginTransaction();
+		int userId = 0;
+		try {
+			Serializable ser = session.save(user);
+			if (ser != null) {
+				userId = (Integer) ser;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		session.getTransaction().commit();
+		return userId;
+	}
+
+	@Override
+	public User getUserById(int id) {
+		Session session = sessionFactory.getCurrentSession();
+		session.beginTransaction();
+		User user = new User();
+		user = (User) session.createQuery("from user where user_id="+id);
+		return user;
+	}
+
+}

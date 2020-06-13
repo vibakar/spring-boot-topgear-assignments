@@ -1,0 +1,25 @@
+package com.wipro.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.wipro.model.Employee;
+import com.wipro.model.EmployeeRepository;
+
+@Controller
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeRepository emp;
+	
+	@ResponseBody
+	@PostMapping(path = "/add")
+	public String addEmployee(@RequestParam int id, @RequestParam String name, @RequestParam String email, @RequestParam String location) {
+		Employee e = new Employee(id, name, email, location);
+		emp.save(e);
+		return "<h2>Employee added successfully</h2>";
+	}
+}
